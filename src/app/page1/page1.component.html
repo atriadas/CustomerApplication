@@ -1,0 +1,247 @@
+<!-- <html>
+    <head>
+        <h1>Sign Up</h1>
+        <style type="text/css" media="all">
+        form{
+            margin: auto;
+            top:auto;
+            width: 250px;
+        }
+        </style>
+
+    </head>
+    <body>
+        
+        <form>
+            Name:<input type="text" name="firstname"><br>
+            Username:<input type="text" name="username"><br>
+            Password:<input type="password" name="password"><br>
+            Confirm Password:<input type="password" name="confirm password"><br>
+            Conctact Number:<input type="number" name="conctact number"><br>
+            Email:<input type="email" name="email"><br>
+            Date of Birth:<input type="date" name='dob'><br>
+            <br>
+            <input type="button" value="Submit" onclick="fun()" >
+
+        </form>
+
+        <script>
+            function fun()
+            {
+                window.location.href='hello.html';
+            }
+        </script>
+    </body>
+</html>-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css" media="all">
+        form {
+            margin: auto;
+            margin-top: 50px;
+            ;
+            width: 500px;
+        }
+        #dropdownMenuButton{ 
+            width: 425px;
+            text-align: left;
+            margin-left:auto;
+
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Sign Up</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Managers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Lakshit</a>
+                        <a class="dropdown-item" href="#">Kriti</a>
+                        <a class="dropdown-item" href="#">Rohan</a>
+                        <!-- <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a> -->
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+        </div>
+    </nav>
+    <form>
+        <div class="form-row">
+            <div class="col">
+                <label for="exampleInputName">Name</label>
+                <input class="form-control form-control-sm" type="text" class="form-control" id="exampleInputName">
+            </div>
+
+            <div class="col">
+                <label for="exampleInputName">Username</label>
+                <input class="form-control form-control-sm" type="text" class="form-control" id="exampleInputUsername">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="exampleInputPassword1">Password</label>
+                <input class="form-control form-control-sm" type="password" class="form-control"
+                    id="exampleInputPassword1">
+            </div>
+            <div class="col">
+                <label for="exampleInputPassword2">Confirm Password</label>
+                <input class="form-control form-control-sm" type="password" class="form-control"
+                    id="exampleInputConfirmPassword1">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="exampleInputNumber">Contact Number</label>
+                <input class="form-control form-control-sm" type="number" class="form-control" id="exampleInputNumber">
+            </div>
+
+            <div class="col">
+                <label for="exampleInputDob">Date of Birth</label>
+                <input class="form-control form-control-sm" type="date" class="form-control" id="exampleInputDob">
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input class="form-control form-control-sm" type="email" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+        </div>
+
+
+
+
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" (click)="AddItem()">Submit</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop"
+            style="margin-left:10pt;"><i class="fa fa-gear fa-spin" style="font-size:17px"></i>
+             Settings 
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="staticBackdropLabel">Change Settings for Call Recordings</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="margin-left: 15pt;margin-right: 15pt;">
+                <label>Record Management Access </label><i class="fa fa-info-circle" popoverPlacement="auto"[popover]="tearsRef" ><div style="background-color:rgb(20, 20, 20);color: white;" ><popover-content #tearsRef >
+                    <p style="font-size: 8.5pt;">•	None: the user may not manage recordings (even their own).</p>
+                    <p style="font-size: 8.5pt;">•	Own Recordings: the user may only manage their own recordings.</p>
+                    <p style="font-size: 8.5pt;">•    Group Recordings: the user may manage their own recording and any group listed under "Group Manager" below.</p> 
+                    <p style="font-size: 8.5pt;">•	All Recordings: the user may manage recordings for all users of the sytem.</p>
+                
+                </popover-content></div></i><br>
+
+                        <!-- <button type="button" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">i</button> -->
+
+
+                        <!-- <button type="button" class="btn btn-outline-secondary" ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Pop title">
+                            Hover over me!
+                          </button>
+                           --> 
+                           
+                            <!-- <popover-content #tearsRef>
+                            A yellow face with a big grin, uplifted eyebrows, and smiling eyes, each shedding a tear from laughing so hard  </popover-content>
+                            <img  height="15" [popover]="tearsRef" src="assets/img/info.jpg"> -->
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect1" style="list-style:none" >
+                                  <option>None</option>
+                                  <option>Own Recordings</option>
+                                  <option>Group Recordings</option>
+                                  <option>All Recordings</option>
+                                </select>
+                              </div>
+                        <!-- <div class="dropdown" style="width:80%;">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Group Recordings
+                            </button> -->
+                            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">None</a>
+                                <a class="dropdown-item" href="#">Own Recordings</a>
+                                <a class="dropdown-item" href="#">Group Recordings</a>
+                                <a class="dropdown-item" href="#">All Recordings</a>
+                            </div>
+                        </div> -->
+                        <label>Group Manager</label>
+                        <ng-select [items]="items" bindLabel="name" placeholder="Start typing a group name" appendTo="body"
+                            multiple="true" [(ngModel)]="selected" [ngModelOptions]="{standalone: true}">
+                            <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                                <span class="ng-value-label">{{item.name}}</span>
+                                <span class="ng-value-icon right" (click)="clear(item)" aria-hidden="true">×</span>
+                            </ng-template>
+                        </ng-select><p><small>The user can manage recordings for any members of listed groups</small></p>
+                        <label>Group Member</label>
+                        <ng-select [items]="items" bindLabel="name" placeholder="Start typing a group name" appendTo="body"
+                            multiple="true" [(ngModel)]="selected" [ngModelOptions]="{standalone: true}">
+                            <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                                <span class="ng-value-label">{{item.name}}</span>
+                                <span class="ng-value-icon right" (click)="clear(item)" aria-hidden="true">×</span>
+                            </ng-template>
+                        </ng-select>
+                        <p style="margin-right:40pt"><small>The user's recordings can be managed by managers in listed groups</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
